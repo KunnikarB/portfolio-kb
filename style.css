@@ -22,6 +22,7 @@ body {
   color: var(--text-color);
   max-width: 1400px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -68,6 +69,7 @@ nav a:hover {
   text-align: center;
   padding: 0 50px;
   gap: 40px;
+  
 }
 .hero-section .text {
   flex: 5;
@@ -184,7 +186,7 @@ footer .left {
 
 footer .left a {
   color: var(--text-color);
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -195,6 +197,7 @@ footer .right {
 }
 
 footer .right a {
+  font-size: 16px;
   color: var(--text-color);
   margin: 0 10px;
 }
@@ -222,6 +225,35 @@ footer .bottom {
   color: var(--text-color);
 }
 
+
+/* MEDIA QUERIES */
+@media (max-width: 950px) {
+    /* SECTION 1: Hero */
+    .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .hero .text {
+    flex: unset;
+  }
+
+  .hero .profile {
+    justify-content: center;
+  }
+
+  .hero .profile img {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+
+  .hero .text h1 {
+    font-size: 2rem;
+  }
+  }
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -247,9 +279,11 @@ footer .bottom {
     display: flex;
   }
 
+
   footer {
     grid-template-columns: 1fr;
     text-align: center;
+    height: auto;
   }
 
   footer .left {
@@ -257,7 +291,7 @@ footer .bottom {
   }
 
   footer .left a {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   footer .right {
@@ -267,14 +301,36 @@ footer .bottom {
 
   footer .right a {
     margin: 0 5px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   footer .right a span {
     display: none;
   }
 
-  footer .bottom {
-    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  /* SECTION 1: Hero */
+    .hero-section {
+      padding: 20px;
+    }
+  
+    .hero-section .text h1 {
+      font-size: 1.6rem;
+    }
+  
+    /* SECTION 2: Skills */
+    .skills-section {
+      padding: 20px;
+    }
+  
+    .skills-section .images .image {
+    width: 140px;
+    padding: 8px 12px;
+  }
+
+  .skills-section .images .image span {
+    font-size: 14px;
   }
 }
