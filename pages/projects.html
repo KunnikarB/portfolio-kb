@@ -3,6 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="../style.css">
+
+  <!--- preload images -->
+  <link rel="preload" as="image" href="images/profile.jpg" />
+  <link rel="preload" as="image" href="images/KB-Creativ.png" />
+  <link rel="preload" as="image" href="images/agency.png" />
+  <link rel="preload" as="image" href="images/taco.png" />
+  <link rel="preload" as="image" href="images/k-commerce.png" />
+  <link rel="preload" as="image" href="images/letsrelax.png" />
+  <link rel="preload" as="image" href="images/game.png" />
+
   <title>My Projects</title>
 </head>
 <body>
@@ -15,12 +39,102 @@
     </i>
   </div>
 
-    <ul>
-      <li><a href="#about">Om mig</a></li>
+    <ul id="nav-links">
+      <li><a href="../index.html">Om mig</a></li>
       <li><a href="#projects">Projekt</a></li>
-      <li><a href="#contact">Kontakt</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
     </ul>
   </nav>
+<main>
+
+<section class="projects" id="projekt">
+  <h2>Projekt</h2>
+  <p>Här är några av mina senaste projekt. Varje projekt byggdes för att lösa ett specifikt problem eller för att utforska nya teknologier.</p>
+
+  <div class="project-grid">
+
+    <div class="card">
+      <img src="../images/k-commerce.png" alt="E.commerceproject">
+      <h3>E-commerce</h3>
+      <p>E-handelsapp med varukorg, autentisering och betalningsintegration.</p>
+      <div class="buttons">
+        <a href="https://k-online.netlify.app/" class="btn btn-live">Live</a>
+        <a href="https://github.com/KunnikarB/E-commerce.git" class="btn btn-github">GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/taco.png" alt="Taco project">
+      <h3>Taco App</h3>
+      <p>Full stack app with cart, auth, and payments</p>
+      <div class="buttons">
+        <a href="https://kb-taco.netlify.app/" class="btn btn-live">Live</a>
+        <a href="https://github.com/KunnikarB/KB-Taco" class="btn btn-github">GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/k-vintage.png" alt="K-vintageproject">
+      <h3>K-Vintage</h3>
+      <p>Onlineshopping för begagnade kläder och elektronikprodukter</p>
+      <div class="buttons">
+        <a href="https://k-vintage.netlify.app/" class="btn btn-live">Live</a>
+        <a href="https://github.com/KunnikarB/preloved.git" class="btn btn-github">GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/game.png" alt="Game project">
+      <h3>Rock Paper Scissors Game</h3>
+      <p>Interaktivt spel med poängräkning.</p>
+      <div class="buttons">
+        <a href="https://kunnikar-rock-paper-scissor.netlify.app/" class="btn btn-live">Live</a>
+        <a href="https://github.com/KunnikarB/rock-paper-scissor-.git" class="btn btn-github">GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/bookstore.png" alt="project">
+      <h3>Bookstore API App</h3>
+      <p>Fullstack-app (bokhandel) byggd med React (Vite), Node.js, Express, MongoDB och Firebase Authentication.</p>
+      <div class="buttons">
+        <a href="https://bookstore-app-1-uhqx.onrender.com/" class="btn btn-live">Live</a>
+        <a href="https://github.com/KunnikarB/bookstore-app.git" class="btn btn-github">GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/letsrelax.png" alt="Recipeproject">
+      <h3>Let's Relax Spa</h3>
+      <p>Webbplats utformad för att ge information om massageterapitjänster. Sidan är tvåspråkig (engelska och svenska) och optimerad för både dator och mobila enheter.</p>
+      <div class="buttons">
+        <a href="https://letsrelaxstockholm.netlify.app/en/" class="btn btn-live">Live</a>
+        <a href="https://github.com/KunnikarB/letsrelax.git" class="btn btn-github">GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/Thai-cuisine.png" alt="project">
+      <h3>Thai Cuisine App</h3>
+      <p>Webbplats där jag delar mina favoriträtter från Thailand, deras recept och även genererar nya thailändska rätter med recept med hjälp av AI. Sidan är utformad för att vara visuellt tilltalande, interaktiv och användarvänlig.</p>
+      <div class="buttons">
+        <a href="https://thaicuisine.netlify.app/" class="btn btn-live">Live</a>
+        <a href="https://github.com/KunnikarB/myrecipes" class="btn btn-github">GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../images/iberry-cafe.png" alt="project">
+      <h3>iBerry Cafe App</h3>
+      <p>En modern webbplats för iBerry Café som visar meny, tjänster och kontaktinformation. Sidan är utformad för att vara visuellt tilltalande, responsiv och användarvänlig.</p>
+      <div class="buttons">
+        <a href="https://iberry.netlify.app/" class="btn btn-live">Live</a>
+        <a href="https://github.com/KunnikarB/iBerry-cafe" class="btn btn-github">GitHub</a>
+      </div>
+    </div>
+  </div>
+  </section>
+</main>
 
   <!-- FOOTER -->
   <footer>
@@ -57,5 +171,7 @@
     </div>
     
   </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>

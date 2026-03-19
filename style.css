@@ -69,7 +69,6 @@ nav a:hover {
   text-align: center;
   padding: 0 50px;
   gap: 40px;
-  
 }
 .hero-section .text {
   flex: 5;
@@ -119,57 +118,127 @@ nav a:hover {
   border-radius: 50%;
 }
 
-/* SKILLS */
 /* SECTION 2: Skills */
-  .skills-section {
-    padding: 50px;
-    margin-bottom: 100px;
-    background-color: var(--background-color);
-  }
-  
-  .skills-section h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 35px;
-    background: linear-gradient(360deg, #da7c25 26%, #b923e1 74%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .skills-section .text {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .skills-section .images {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .skills-section .images .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 200px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1.5px solid #d3d3d3;
-    border-radius: 50px;
-  }
-  
-  .skills-section .images .image img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    border-radius: 2px;
-  }
-  
-  .skills-section .images .image span {
-    font-size: 18px;
-  }
+.skills-section {
+  padding: 50px;
+  margin-bottom: 100px;
+  background-color: var(--background-color);
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  background: linear-gradient(360deg, #da7c25 26%, #b923e1 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-section .images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .images .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 50px;
+}
+
+.skills-section .images .image img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.skills-section .images .image span {
+  font-size: 18px;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 50px;
+  background: linear-gradient(90deg, #ff66c4 30%, #9f01ea 70%);
+}
+.projects h2,
+.projects p {
+  text-align: center;
+  margin: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 3rem;
+}
+
+.card {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(203, 34, 147, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  animation: slideIn 1s ease-in-out;
+  margin: 2rem auto;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.btn-live {
+  background: #ff4d8d;
+  color: white;
+}
+.btn-github {
+  border: 1px solid #ff4d8d;
+  color: #ff4d8d;
+}
 
 /* FOOTER */
 footer {
@@ -225,11 +294,10 @@ footer .bottom {
   color: var(--text-color);
 }
 
-
 /* MEDIA QUERIES */
 @media (max-width: 950px) {
-    /* SECTION 1: Hero */
-    .hero {
+  /* SECTION 1: Hero */
+  .hero {
     flex-direction: column-reverse;
     text-align: center;
     height: auto;
@@ -252,7 +320,7 @@ footer .bottom {
   .hero .text h1 {
     font-size: 2rem;
   }
-  }
+}
 
 @media (max-width: 768px) {
   .menu-toggle {
@@ -267,7 +335,6 @@ footer .bottom {
     position: absolute;
     top: 60px;
     right: 0;
-    background: var(--link-color);
     flex-direction: column;
     width: 200px;
     padding: 20px;
@@ -278,7 +345,6 @@ footer .bottom {
   nav ul.active {
     display: flex;
   }
-
 
   footer {
     grid-template-columns: 1fr;
@@ -307,25 +373,24 @@ footer .bottom {
   footer .right a span {
     display: none;
   }
-
 }
 
 @media (max-width: 480px) {
   /* SECTION 1: Hero */
-    .hero-section {
-      padding: 20px;
-    }
-  
-    .hero-section .text h1 {
-      font-size: 1.6rem;
-    }
-  
-    /* SECTION 2: Skills */
-    .skills-section {
-      padding: 20px;
-    }
-  
-    .skills-section .images .image {
+  .hero-section {
+    padding: 20px;
+  }
+
+  .hero-section .text h1 {
+    font-size: 1.6rem;
+  }
+
+  /* SECTION 2: Skills */
+  .skills-section {
+    padding: 20px;
+  }
+
+  .skills-section .images .image {
     width: 140px;
     padding: 8px 12px;
   }
