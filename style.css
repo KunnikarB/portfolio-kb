@@ -30,14 +30,12 @@ a {
   text-decoration: none;
 }
 
-
 /* NAV */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  
 }
 
 nav .logo img {
@@ -81,7 +79,6 @@ main {
   text-align: center;
   padding: 0 50px;
   gap: 40px;
-
 }
 .hero-section .text {
   flex: 5;
@@ -297,6 +294,16 @@ main {
   border-radius: 6px;
   cursor: pointer;
   margin-bottom: 4rem;
+}
+
+#form-status {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 /* FOOTER */

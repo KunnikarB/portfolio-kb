@@ -47,11 +47,13 @@
       <p>
         Jag är alltid öppen för nya möjligheter och samarbeten. Om du har en idé, ett projekt eller bara vill säga hej, tveka inte att kontakta mig! Fyll i formuläret nedan eller använd länkarna för att nå mig direkt via email eller sociala medier.
       </p>
-      <form onsubmit="handleSubmit(event)">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  
+        <button type="submit" id="submit-btn">Send Message</button>
+        <p id="form-status"></p>
       </form>
     </section>
   </main>
@@ -95,6 +97,14 @@
   </footer>
 
   <script src="../script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script>
+  (function(){
+    emailjs.init("fZp6h6XmkV-7xnv0i"); 
+  })();
+</script>
 
 </body>
 </html>
