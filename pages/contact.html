@@ -20,29 +20,33 @@
   <title>Contact ME</title>
 </head>
 <body>
+
   <header>
   <!-- NAV -->
     <nav>
-      <div class="logo">
-        <img src="../images/kb-logo.svg" alt="KB Logo">
-      </div>
-      <!-- Hamburger Icon -->
-      <div class="menu-toggle" id="menu-toggle">
-      <i class="fa-solid fa-bars">
-      </i>
+    <div class="logo">
+      <img src="../images/kb-logo.svg" alt="KB Logo">
     </div>
+    <!-- Hamburger Icon -->
+    <div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars">
+    </i>
+  </div>
 
-      <ul>
-        <li><a href="../index.html">Om mig</a></li>
-        <li><a href="projects.html">Projekt</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-      </ul>
+    <ul id="nav-links">
+      <li><a href="../index.html">Om mig</a></li>
+      <li><a href="#projects">Projekt</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
     </nav>
   </header>
 
   <main>
     <section class="contact" id="contact">
       <h2>Contact Me</h2>
+      <p>
+        Jag är alltid öppen för nya möjligheter och samarbeten. Om du har en idé, ett projekt eller bara vill säga hej, tveka inte att kontakta mig! Fyll i formuläret nedan eller använd länkarna för att nå mig direkt via email eller sociala medier.
+      </p>
       <form onsubmit="handleSubmit(event)">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
@@ -51,6 +55,7 @@
       </form>
     </section>
   </main>
+
   <!-- FOOTER -->
   <footer>
     <div class="left">
@@ -88,6 +93,8 @@
     </div>
     
   </footer>
+
   <script src="../script.js"></script>
+
 </body>
 </html>

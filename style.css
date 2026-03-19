@@ -30,9 +30,6 @@ a {
   text-decoration: none;
 }
 
-header {
-  border-bottom: 1px solid var(--link-color);
-}
 
 /* NAV */
 nav {
@@ -40,6 +37,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
+  
 }
 
 nav .logo img {
@@ -83,6 +81,7 @@ main {
   text-align: center;
   padding: 0 50px;
   gap: 40px;
+
 }
 .hero-section .text {
   flex: 5;
@@ -262,11 +261,26 @@ main {
   text-align: center;
   margin-bottom: 3rem;
 }
+
+.contact h2 {
+  font-size: 35px;
+  background: linear-gradient(360deg, #da7c25 26%, #b923e1 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact p {
+  margin: 20px 0;
+  color: var(--text-color);
+}
+
 .contact form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .contact input,
 .contact textarea {
   padding: 10px;
@@ -274,6 +288,7 @@ main {
   border: none;
   outline: none;
 }
+
 .contact button {
   background: #ff4d8d;
   color: white;
@@ -281,6 +296,7 @@ main {
   padding: 10px;
   border-radius: 6px;
   cursor: pointer;
+  margin-bottom: 4rem;
 }
 
 /* FOOTER */
