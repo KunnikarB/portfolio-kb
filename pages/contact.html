@@ -16,28 +16,41 @@
     />
 
     <link rel="stylesheet" href="../style.css">
-    
+
   <title>Contact ME</title>
 </head>
 <body>
+  <header>
   <!-- NAV -->
-  <nav>
-    <div class="logo">
-      <img src="../images/kb-logo.svg" alt="KB Logo">
+    <nav>
+      <div class="logo">
+        <img src="../images/kb-logo.svg" alt="KB Logo">
+      </div>
+      <!-- Hamburger Icon -->
+      <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars">
+      </i>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="menu-toggle" id="menu-toggle">
-    <i class="fa-solid fa-bars">
-    </i>
-  </div>
 
-    <ul>
-      <li><a href="../index.html">Om mig</a></li>
-      <li><a href="projects.html">Projekt</a></li>
-      <li><a href="#contact">Kontakt</a></li>
-    </ul>
-  </nav>
+      <ul>
+        <li><a href="../index.html">Om mig</a></li>
+        <li><a href="projects.html">Projekt</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
   <!-- FOOTER -->
   <footer>
     <div class="left">
@@ -71,7 +84,7 @@
         </a>
       </div>
     <div class="bottom">
-      <p>&copy; 2023 Kunnikar Boonbunlu. Alla rättigheter förbehållna.</p>
+      <p>&copy; 2026 Kunnikar Boonbunlu. Alla rättigheter förbehållna.</p>
     </div>
     
   </footer>

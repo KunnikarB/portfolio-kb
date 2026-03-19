@@ -30,6 +30,10 @@ a {
   text-decoration: none;
 }
 
+header {
+  border-bottom: 1px solid var(--link-color);
+}
+
 /* NAV */
 nav {
   display: flex;
@@ -63,6 +67,11 @@ nav a:hover {
   display: none;
   font-size: 24px;
   cursor: pointer;
+}
+
+main {
+  margin-top: 4rem;
+  height: auto;
 }
 
 /* HERO */
@@ -105,7 +114,7 @@ nav a:hover {
   margin-right: 10px;
   margin-bottom: 10px;
   transition: 0.1s;
-  color: var(--text-color) ;
+  color: var(--text-color);
 }
 
 .hero .text .links a:hover {
@@ -246,6 +255,34 @@ nav a:hover {
   color: #ff4d8d;
 }
 
+/* CONTACT */
+.contact {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+.contact button {
+  background: #ff4d8d;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 /* FOOTER */
 footer {
   display: grid;
@@ -377,7 +414,6 @@ footer .bottom {
 
   footer .right {
     justify-content: center;
-
   }
 
   footer .right a {
@@ -424,7 +460,7 @@ footer .bottom {
   .skills-section .images .image span {
     font-size: 14px;
   }
-  
+
   footer .left .logo img {
     width: 100px;
   }
