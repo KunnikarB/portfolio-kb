@@ -183,7 +183,7 @@ main {
 /* PROJECTS */
 .projects {
   padding: 50px;
-  background: linear-gradient(90deg, #ff66c4 30%, #9f01ea 70%);
+  background: linear-gradient(65deg, #6672f1 30%, #ff66c4 70%);
 }
 .projects h2,
 .projects p {
