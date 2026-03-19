@@ -1,6 +1,6 @@
 :root {
     --text-color: #fff;
-    --link-color: hotpink;
+    --link-color: #ff4d8d;
     --background-color: #1a1c20;
   }
   
@@ -59,10 +59,38 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* SECTIONS */
-section {
-  padding: 60px 40px;
-}
+/* HERO */
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero span {
+      color: var(--link-color);
+    }
+
+    .hero p {
+      margin: 20px 0;
+      color: var(--text-color);
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      border: none;
+      background: var(--link-color);
+      color: var(--text-color);
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
 
 
 /* FOOTER */
