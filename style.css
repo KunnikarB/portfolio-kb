@@ -484,7 +484,27 @@ footer .bottom {
     font-size: 14px;
   }
 
+  .contact form {
+    padding: 20px;
+  }
+
+  .contact input,
+.contact textarea, .contact button {
+  margin: 0 2rem;
+}
+
+.contact p {
+  margin: 3rem;
+  font-size: 14px;
+}
+
   footer .left .logo img {
     width: 100px;
+  }
+
+  footer .bottom {
+    max-width: 180px;
+    margin: 15px auto;
+    font-size: 12px;
   }
 }
